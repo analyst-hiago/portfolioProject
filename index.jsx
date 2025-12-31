@@ -1,114 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML5 Basics Tutorial</title>
-</head>
-<body>
+export default function App() {
+  return (
+    <>
+      <header>
+        <h1>📘 HTML5 Basics</h1>
+        <p>A simple and direct introduction to HTML5</p>
+      </header>
 
-  <header>
-    <h1>📘 HTML5 Basics</h1>
-    <p>A simple and direct introduction to HTML5</p>
-  </header>
+      <main>
+        <article>
 
-  <main>
-    <article>
+          <section>
+            <h2>🧩 What is HTML?</h2>
+            <p>
+              <strong>HTML</strong> stands for <strong>HyperText Markup Language</strong>.
+              It is the standard language used to create web pages.
+            </p>
+            <p>
+              HTML is responsible for the <em>structure</em> of a website, not its style or behavior.
+            </p>
+          </section>
 
-      <section>
-        <h2>🧩 What is HTML?</h2>
-        <p>
-          <strong>HTML</strong> stands for <strong>HyperText Markup Language</strong>.
-          It is the standard language used to create web pages.
-        </p>
-        <p>
-          HTML is responsible for the <em>structure</em> of a website, not its style or behavior.
-        </p>
-      </section>
+          <section>
+            <h2>🏗️ Basic Structure</h2>
+            <p>
+              Every HTML document follows a basic structure. Below is the minimum required:
+            </p>
 
-      <section>
-        <h2>🏗️ Basic Structure</h2>
-        <p>
-          Every HTML document follows a basic structure. Below is the minimum required:
-        </p>
-
-        <pre>
-<code>
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;My Page&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
+            <pre>
+              <code>
+{`<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
     Content goes here
-  &lt;/body&gt;
-&lt;/html&gt;
-</code>
-        </pre>
+  </body>
+</html>`}
+              </code>
+            </pre>
 
-        <p>
-          The <strong>&lt;body&gt;</strong> tag contains everything visible on the page.
-        </p>
-      </section>
+            <p>
+              The <strong>&lt;body&gt;</strong> tag contains everything visible on the page.
+            </p>
+          </section>
 
-      <section>
-        <h2>🔖 HTML Elements and Tags</h2>
-        <p>
-          HTML uses <strong>tags</strong> to define elements.
-        </p>
+          <section>
+            <h2>🔖 HTML Elements and Tags</h2>
+            <p>
+              HTML uses <strong>tags</strong> to define elements.
+            </p>
 
-        <p>Examples of common elements:</p>
+            <ul>
+              <li><strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong> — titles</li>
+              <li><strong>&lt;p&gt;</strong> — paragraphs</li>
+              <li><strong>&lt;a&gt;</strong> — links</li>
+              <li><strong>&lt;img&gt;</strong> — images</li>
+            </ul>
 
-        <ul>
-          <li><strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong> — titles</li>
-          <li><strong>&lt;p&gt;</strong> — paragraphs</li>
-          <li><strong>&lt;a&gt;</strong> — links</li>
-          <li><strong>&lt;img&gt;</strong> — images</li>
-        </ul>
+            <pre>
+              <code>
+{`<p>This is a simple paragraph.</p>`}
+              </code>
+            </pre>
+          </section>
 
-        <p>Example of a paragraph:</p>
+          <section>
+            <h2>🧠 Text Hierarchy</h2>
 
-        <pre>
-<code>
-&lt;p&gt;This is a simple paragraph.&lt;/p&gt;
-</code>
-        </pre>
-      </section>
+            <h3>This is an H3 heading</h3>
+            <p>Used for subsections.</p>
 
-      <section>
-        <h2>🧠 Text Hierarchy</h2>
-        <p>
-          HTML provides different heading levels to organize content:
-        </p>
+            <h4>This is an H4 heading</h4>
+            <p>Used for smaller sections.</p>
 
-        <h3>This is an H3 heading</h3>
-        <p>Used for subsections.</p>
+            <p>
+              Use headings in order to keep your document <strong>clear and readable</strong>.
+            </p>
+          </section>
 
-        <h4>This is an H4 heading</h4>
-        <p>Used for smaller sections.</p>
+          <section>
+            <h2>🚀 Final Notes</h2>
+            <p>
+              HTML is easy to learn and very powerful.
+              With just a few tags, you can already build real websites.
+            </p>
+            <p>
+              The next steps are learning <strong>CSS</strong> for styling and
+              <strong>JavaScript</strong> for interactivity.
+            </p>
+          </section>
 
-        <p>
-          Use headings in order to keep your document <strong>clear and readable</strong>.
-        </p>
-      </section>
+        </article>
+      </main>
 
-      <section>
-        <h2>🚀 Final Notes</h2>
-        <p>
-          HTML is easy to learn and very powerful.
-          With just a few tags, you can already build real websites.
-        </p>
-        <p>
-          The next steps are learning <strong>CSS</strong> for styling and
-          <strong>JavaScript</strong> for interactivity.
-        </p>
-      </section>
-
-    </article>
-  </main>
-
-  <footer>
-    <p>© 2025 — HTML5 Tutorial</p>
-  </footer>
-
-</body>
-</html>
+      <footer>
+        <p>© 2025 — HTML5 Tutorial</p>
+      </footer>
+    </>
+  );
+}
