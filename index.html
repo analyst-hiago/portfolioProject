@@ -1,86 +1,54 @@
-<!-- Abaixo uma estrutura básica de uma pagina HTML-->
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New friends of the cat</title>
-    <h1 id="title">Title</h1>
-    <!--
-    comentário em HTML
-    Elementos
-    Atributos
-    -->
-
-    <!--
-    Nesse caso id="title" é o atributo que pode ser usado como referencia no futuro.
-    O elemento é o básico do HTML e é composto por <tag atributo="valor">conteúdo</tag>
-    Existem elementos que a tag não precisa de fechamento como <br/> que funciona como quebra de linha.
-    -->
+    <title>Página de Login</title>
 </head>
 <body>
-    <img 
-    src="./cat-icon.png" 
-    alt="gato tirando selfie com os amigos"
-    height="400"
-    width="400"
-    >
-    <p>
-        texto &nbsp;&nbsp;&nbsp;texto
-    </p>
-    <br>
-    <p>
-        Novo paragrafo
-    </p>
 
-    <!--
-    Nesse caso o &nbsp; serve como uma adição de espaço
-    E uma quebra de linha pode ser representada por <p><p/> ou por <br>
-    -->
+    <!-- Cabeçalho com título à esquerda e links à direita -->
+    <header>
+        <table width="100%">
+            <tr>
+                <td align="left">
+                    <h1>Meu Site</h1>
+                </td>
+                <td align="right">
+                    <a href="index.html">Home</a> |
+                    <a href="#sobre">Sobre</a>
+                </td>
+            </tr>
+        </table>
+    </header>
 
-    <a href="#">link</a>
-    <br>
-    <a href="#">link</a>
 
-    <!--
-    No fluxo de HTML alguns elementos podem ser considerados inline ou block.
-    Block são os elementos que se posicionam abaixo um do outro como <p><p/>
-    Inline são os elementos que se posicionam a frente um do outro como <a><a/>
-    Obs.: em resumo o HTML não imprime a ordem de escrita que consta no código
-    -->
+    <!-- Imagem estética -->
+    <section>
+        <img src="./cat-icon.png" alt="gato tirando selfie com os amigos" width="600" height="200">
+    </section>
 
-    <p>Lorem <em>ipsum</em> dolor <strong>sit</strong> amet consectetur adipisicing elit. Doloribus, modi. Delectus consequatur illum omnis a et quis nam amet incidunt consequuntur rem! Neque dolores atque beatae quas inventore dolorem ipsa?</p>
+    <!-- Seção de Login -->
+    <section>
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
 
-    <!--
-    Existem tags de alinhamento que podem ser incluidas dentro de outra tag.
-    <em></em> e também o <strong></strong> que servem para tranformar o texto em italico e negrito.
-    -->
+            <label for="senha">Senha:</label><br>
+            <input type="password" id="senha" name="senha" required><br><br>
 
-    <code>
-        <p></p>
-    </code>
-    <!--Isso não funciona-->
+            <button type="submit">Entrar</button><br><br>
 
-    &lt;p&gt;&lt;/p&gt;
-    <!--Isso funciona-->
-    <!--
-    Esse é o novo conceito para aprender a imprimir tags como um texto. 
-    O navegador não permite a primeira opção, pois ele identifica o <p></p> como uma tag e isso não é visivel.
-    No segundo exemplo é demontrado que o < é simbolizado por &lt; e o > é simbolizado por &gt;
-    Isso é chamado de caractere reservado
-    -->
+            <a href="#">Esqueceu a senha?</a>
+        </form>
+    </section>
 
-    <div id="id-nome"></div>
-    <!-- id="" serve para identificar uma tag e dar a possiblidade de usar isso no css ou JS depois-->
+    <!-- Sobre -->
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Este é um exemplo de site com uma página de login simples usando apenas HTML.</p>
+    </section>
 
-    <div class="produto-1">Sapato</div>
-    <div class="produto-2">Camisa</div>
-
-    <!---->
-
-    <a href="other archive" target="#title">link</a>
-
-    <!--href="" é necessário para links-->
-    <a href="https://google.com" target="#google">Link Google</a>
 </body>
 </html>
